@@ -25,6 +25,7 @@
 </head>
 <body>
 <div class="container">
+	 <marquee scrolldelay="10" scrollamount="10" behavior="scroll"><span id="flyingtext" style="font-weight: bolder;font-size: 40px;color: black;">高一一班，奋勇争先；鲲鹏击水，一飞冲天！</span></marquee>
 	<div class="module" >
 		<a href="#">罗少的每日音乐</a>
 	</div>
@@ -36,16 +37,25 @@
 		洪部长的健康贴士
 	</div>
 	<div class="module" >		
-		<a href="#">运动会照片</a>
+		<a href="photos.html">照片</a>
 	</div>
 	<br/>
 	<div class="module" >
 		一班表情包
 	</div>
 	<div class="module" >
-		神奇的202房间
+		<a target="_blank" href="https://music.163.com/#/playlist?id=7759601593&creatorId=7794190487">2501精神不灭(by 蟹)</a>
 	</div>
 </div>
-
+<script type="text/javascript">
+	var text=document.getElementById("flyingtext");
+	var texts=["高一一班，奋勇争先；鲲鹏击水，一飞冲天！","仰视十度！杀！杀！杀！","2501 2501 2501 2501","eai（5+7声音","Uh,that\'s good"]
+	var i=0;
+	setInterval(function(){
+		text.innerText=texts[i%texts.length];
+		i++;
+	},10000);
+	
+</script>
 </body>
 </html>
