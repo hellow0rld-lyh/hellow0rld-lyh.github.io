@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>将领信息图片生成</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="./assets/css/general.css">
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    </head>
-    <body style="background-color: darkslateblue;">
-        <div class="container">
-            <div id="money" class="res">
-                <span class="val" id="money_val">999999</span>
-            </div>
-            <div id="medal" class="res">
-                <span class="val" id="medal_val">999999</span>
-            </div>
-            <div id="blue" class="res">
-                <span class="val" id="blue_val">999999</span>
-            </div>
-            <div id="purple" class="res">
-                <span class="val" id="purple_val">999999</span>
-            </div>
-            <div id="tech" class="res">
-                <span class="val" id="tech_val">999999</span>
-            </div>
-            <div id="yellow" class="res">
-                <span class="val" id="yellow_val">999999</span>
-            </div>
-        
-        
-        <div class="container_2" style="background-color: #00000085; width: 1280px;height: 720px;position: absolute; margin: 0 0 0 0;z-index: 10;">
-            
+
+<head>
+    <title>将领信息图片生成</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./assets/css/general.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body style="background-color: rgb(195, 156, 39);">
+    <div class="bg">
+        <div id="money" class="res">
+            <span class="val dazi" id="money_val">999999</span>
         </div>
+        <div id="medal" class="res">
+            <span class="val dazi" id="medal_val">999999</span>
         </div>
-        <div class="editor">
-            <div class="input-group">
-                <input class="resedit" type="text" placeholder="金币">
-            </div>
-            <div class="input-group">
-                <input class="resedit" type="text" placeholder="勋章">
-            </div>
-            <div class="input-group">
-                <input class="resedit" type="text" placeholder="工业">
-            </div>
-            <div class="input-group">
-                <input class="resedit" type="text" placeholder="能源">
-            </div>
-            <div class="input-group">
-                <input class="resedit" type="text" placeholder="科技">
-            </div>
-            <div class="input-group">
-                <input class="resedit" type="text" placeholder="黄章">
-            </div>
-            <button>按钮6</button>
+        <div id="blue" class="res">
+            <span class="val xiaozi" id="blue_val">999999</span>
+        </div>
+        <div id="purple" class="res">
+            <span class="val xiaozi" id="purple_val">999999</span>
+        </div>
+        <div id="tech" class="res">
+            <span class="val xiaozi" id="tech_val">999999</span>
+        </div>
+        <div id="yellow" class="res">
+            <span class="val xiaozi" id="yellow_val">999999</span>
+        </div>
+        <canvas id="genNum"></canvas>
+        
+        <div class="container_2">
+
+        </div>
+
+    </div>
+    <div class="editor">
+        <div class="input-group">
+            <input class="resedit" type="text" placeholder="金币">
+        </div>
+        <div class="input-group">
+            <input class="resedit" type="text" placeholder="勋章">
+        </div>
+        <div class="input-group">
+            <input class="resedit" type="text" placeholder="工业">
+        </div>
+        <div class="input-group">
+            <input class="resedit" type="text" placeholder="能源">
+        </div>
+        <div class="input-group">
+            <input class="resedit" type="text" placeholder="科技">
+        </div>
+        <div class="input-group">
+            <input class="resedit" type="text" placeholder="黄章">
+        </div>
+        <div class="input-group">
+            <input class="resedit" type="text" placeholder="当前将领数">
+        </div>
+        <div class="input-group">
+            <input class="resedit" type="text" placeholder="总将领数">
         </div>
         
-    </body>
-    <script src="./assets/js/general.js"></script>
+        <button>按钮6</button>
+    </div>
+
+</body>
+<script src="./assets/js/general.js"></script>
+
 </html>

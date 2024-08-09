@@ -5,6 +5,8 @@ var purple = $('#purple_val');
 var tech = $('#tech_val');
 var yellow = $('#yellow_val');
 var display_container2 = 1;
+var genNum=$('#genNum');
+var ctx = genNum.getContext("2d");
 $(document).ready(function() {
     // 监听资源输入框的变化
     $('.resedit').on('input', function() {
